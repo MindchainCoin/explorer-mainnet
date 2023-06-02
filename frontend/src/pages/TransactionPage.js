@@ -404,7 +404,7 @@ const TransactionPage = () => {
                   <div className="blockData-col1-title">Value</div>
                 </div>
                 <div className="blockData-col2">
-                  {parseInt(txDbInfo.value, 16) / 10 ** 18} GEN
+                  {parseInt(txDbInfo.value, 16) / 10 ** 18} MIND
                 </div>
               </div>
 
@@ -437,7 +437,7 @@ const TransactionPage = () => {
                         txReceiptInfo.logs[0].topics[0] ==
                           "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4" ? (
                           <div className="airdrop">
-                            20 GEN Airdrop Completed
+                            20 MIND Airdrop Completed
                           </div>
                         ) : (
                           <table>

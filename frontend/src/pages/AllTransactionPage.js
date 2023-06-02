@@ -130,7 +130,7 @@ const AllTransactionPage = () => {
                         </span>
                       </td>
                       <td className="td-right">
-                        {parseInt(data.value, 16) / 10 ** 18} GEN
+                        {parseInt(data.value, 16) / 10 ** 18} MIND
                       </td>
                     </tr>
                   );

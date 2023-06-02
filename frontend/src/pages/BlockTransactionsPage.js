@@ -90,7 +90,7 @@ return (
                                 <td className='td-center'>
                                     <span onClick={(e)=>goToToAddress(data.toAddress, e)}>{(data.toAddress).substr(0, 20)}...</span>
                                 </td>
-                                <td className='td-right'>{parseInt(data.value, 16)/10**18} GEN</td>
+                                <td className='td-right'>{parseInt(data.value, 16)/10**18} MIND</td>
                             </tr>
                         })
                         : null

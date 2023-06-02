@@ -89,6 +89,7 @@ const Main = () => {
       window.open("/txs");
     } else {
       navigate("/txs");
+      tsx
     }
   };
 
@@ -126,7 +127,7 @@ const Main = () => {
           <div className="blockInfoSection1">
             <div className="block-col1">
               <div className="block-col1-row1">
-                <h1>GEN Price</h1>
+                <h1>MIND Price</h1>
                 {tokenData != null ? <h3>$ {tokenData.last}</h3> : null}
               </div>
               <div className="block-col1-row2">
@@ -156,7 +157,7 @@ const Main = () => {
             </div>
             <div className="block-col3">
               <div className="block-col3-row1">
-                <h1>Gen Transactions History</h1>
+                <h1>MIND Transactions History</h1>
               </div>
               <div className="block-col3-row2">
                 {chartWeeklyTxsByDate != null ? (
@@ -273,13 +274,13 @@ const Main = () => {
                           <div className="triangle-main"> </div>
                           {(parseInt(datas.value, 16) / 10 ** 18).toFixed(4) ==
                           0 ? (
-                            <p>0 GEN</p>
+                            <p>0 MIND</p>
                           ) : (
                             <p>
                               {(parseInt(datas.value, 16) / 10 ** 18).toFixed(
                                 4
                               )}{" "}
-                              GEN
+                             MIND
                             </p>
                           )}
                         </div>

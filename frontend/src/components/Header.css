@@ -20,7 +20,7 @@
 }
 
 .navBar li:hover{
-    background-color: #08082D;
+    background-color: #b7a80a;
     border-radius: 10px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .navBar h3{
-    background-color: #08082D;
+    background-color: #c7b000;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
     align-items: center;
@@ -92,7 +92,7 @@
     }
 
     .navBar_On li:hover{
-        background-color: #08082D;
+        background-color: #e7d215;
         border-radius: 10px;
     }
     
@@ -113,7 +113,7 @@
     }
 
     .network{
-        background-color: #08082D;
+        background-color: #c88600;
         padding-top: 2px;
         margin-right: 10px;
         border-radius: 10px;

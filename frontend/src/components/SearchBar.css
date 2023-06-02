@@ -25,8 +25,8 @@
     outline: none;
     font-size: 16px;
     text-align: left;
-    background-color: #08082D;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .searchButton {
@@ -40,8 +40,8 @@
     outline: none;
     margin-left: 2px;
     cursor: pointer;
-    background-color: #08082D;
-    color: white;    
+    background-color: #eb9500;
+    color: rgb(11, 62, 183);    
 }
 
 .searchButton div{
@@ -53,7 +53,7 @@
 .searchButton:hover{
     border: 2px solid #08082D;
     color: #08082D;
-    background-color: white;
+    background-color: rgb(174, 148, 0);
 }
 
 @media(max-width:1480px){
