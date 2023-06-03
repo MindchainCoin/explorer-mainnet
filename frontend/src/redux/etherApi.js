@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const etherApi = axios.create({
-    baseURL : "https://mainnet-rpc.metaviralscan.com",
-    //baseURL : "https://testnet-rpc-seoul.gen.foundation",
+    baseURL : "http://45.76.129.38:8545",
+    //baseURL : "https:etaviralscan//testnet-rpc-seoul.gen.foundation",
     headers : {'content-type' : "application/json"}
 })
 

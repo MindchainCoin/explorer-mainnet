@@ -8,7 +8,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #514833;
+  background-color: #e6a100;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -52,14 +52,14 @@
   display: flex;
   align-items: center;
   height: 50px;
-  border-bottom: #212121 solid 1px;
+  border-bottom: #c99b27 solid 1px;
 }
 
 .blockData-row-input {
   display: flex;
   align-items: center;
   height: 200px;
-  border-bottom: #212121 solid 1px;
+  border-bottom: #c79409 solid 1px;
 }
 
 .blockData-row-last {
@@ -137,7 +137,7 @@
 }
 
 .blockData-col2 button:hover {
-  color: black;
+  color: rgb(212, 85, 0);
   background-color: #7570fa;
 }
 
@@ -186,7 +186,7 @@
   flex-direction: column;
   /* width: 100%; */
   max-width: 900px;
-  background-color: #08082d;
+  background-color: #c68b0b;
   height: auto;
   text-align: left;
   border: 1px solid grey;

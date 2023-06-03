@@ -1,5 +1,5 @@
 .txsAddress {
-  color: rgb(35, 35, 36);
+  color: rgb(210, 210, 210);
   cursor: pointer;
 }
 
@@ -37,7 +37,7 @@
   margin: 0px 30px 0px 30px;
   width: 580px;
   border-radius: 15px;
-  background-color: #000000;
+  background-color: #e98008;
   padding: 10px 20px 10px 20px;
   overflow: hidden;
 }
@@ -47,7 +47,7 @@
   width: 580px;
 
   border-radius: 15px;
-  background-color: #08082d;
+  background-color: #e6e8cc;
   padding: 10px 20px 10px 20px;
 }
 
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   height: 50px;
-  border-bottom: #212121 solid 1px;
+  border-bottom: #e0b403 solid 1px;
   /* overflow: hidden;  		
     text-overflow: ellipsis;  
     white-space: nowrap;  */
@@ -107,13 +107,13 @@
   /* margin: 0px 30px 0px 30px; */
   /* padding: 10px 20px 10px 20px; */
   border-radius: 15px;
-  background-color: #27272a;
+  background-color: #937c09;
   border-collapse: collapse;
   table-layout: auto;
 }
 
 .addressDataContainer thead tr {
-  background-color: #38383a;
+  background-color: #5f5a4a;
   /* border-radius: 15px; */
 }
 
@@ -141,7 +141,7 @@
 .td-left {
   padding: 15px 15px 15px 15px;
   text-align: left;
-  border-bottom: #212121 solid 1px;
+  border-bottom: #e1cb5d solid 1px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -179,12 +179,12 @@
 } */
 
 .addressDataContainer tbody span {
-  color: #1f1f21;
+  color: #fefefe;
   cursor: pointer;
 }
 
 .addressDataContainer tbody span:hover {
-  color: #dbdbdb;
+  color: #2200ff;
   cursor: pointer;
 }
 
