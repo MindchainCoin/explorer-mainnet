@@ -14,7 +14,7 @@ const Footer = () => {
             <ul>
               <li>
                 <a
-                  href="https://whitepaper.gen.foundation/generation-intro/introduction"
+                  href=""
                   target="_blank"
                 >
                   Whitepaper
@@ -31,21 +31,21 @@ const Footer = () => {
             <h3>Community</h3>
             <div className="social-links">
               <a
-                href="https://t.me/generation_globalofficial"
+                href=""
                 target="_blank"
                 aria-label="Telegram"
               >
                 <TbBrandTelegram size={20} />
               </a>
               <a
-                href="https://medium.com/@GenerationFDN"
+                href=""
                 target="_blank"
                 aria-label="Medium"
               >
                 <BsMedium size={20} />
               </a>
               <a
-                href="https://twitter.com/GenerationFDN"
+                href=""
                 target="_blank"
                 aria-label="Twitter"
               >
@@ -56,13 +56,13 @@ const Footer = () => {
           <div className="footer-col">
             <h3>Contact Us</h3>
             <ul>
-              <li>contact@gen.foundation</li>
+              <li></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="foo">
-        Copyright © 2022. GENERATION. All Rights Reserved.
+        Copyright © 2023 - 2025. MIND.INC. All Rights Reserved.
       </div>
     </footer>
   );
