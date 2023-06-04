@@ -12,7 +12,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #bd8918;
+  background-color: #525151;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -37,7 +37,7 @@
   margin: 0px 30px 0px 30px;
   width: 580px;
   border-radius: 15px;
-  background-color: #e98008;
+  background-color: #0871e9;
   padding: 10px 20px 10px 20px;
   overflow: hidden;
 }
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   height: 50px;
-  border-bottom: #e0b403 solid 1px;
+  border-bottom: #064ed4 solid 1px;
   /* overflow: hidden;  		
     text-overflow: ellipsis;  
     white-space: nowrap;  */
@@ -71,7 +71,7 @@
   justify-content: center;
   width: 150px;
   height: 30px;
-  background-color: #dc9e00;
+  background-color: #676258;
   border-radius: 5px;
 }
 
@@ -95,7 +95,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #c17d06;
+  background-color: #676258;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -107,7 +107,7 @@
   /* margin: 0px 30px 0px 30px; */
   /* padding: 10px 20px 10px 20px; */
   border-radius: 15px;
-  background-color: #937c09;
+  background-color:#545047;
   border-collapse: collapse;
   table-layout: auto;
 }
@@ -141,7 +141,7 @@
 .td-left {
   padding: 15px 15px 15px 15px;
   text-align: left;
-  border-bottom: #e1cb5d solid 1px;
+  border-bottom: #888577 solid 1px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -165,7 +165,7 @@
 .td-right {
   padding: 15px 30px 15px 15px;
   text-align: right;
-  border-bottom: #212121 solid 1px;
+  border-bottom: #916464 solid 1px;
   overflow: hidden;
   white-space: nowrap;
 }

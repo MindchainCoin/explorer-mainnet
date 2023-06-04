@@ -19,13 +19,13 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #edaf11;
+  background-color: #3e424d;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .blockInfoContainer h1 {
-  color: rgb(26, 21, 21);
+  color: rgb(170, 143, 143);
 }
 
 .blockInfoContainer h3 {
@@ -50,14 +50,14 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid #212121;
+  border-right: 2px solid #626767;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .block-col1-row1 {
   height: 70px;
-  border-bottom: 2px solid #212121;
+  border-bottom: 2px solid #494848;
 }
 
 .block-col1-row2 {
@@ -69,14 +69,14 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid #212121;
+  border-right: 2px solid #cebcbc;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .block-col2-row1 {
   height: 70px;
-  border-bottom: 2px solid #212121;
+  border-bottom: 2px solid #58595a;
 }
 
 .block-col2-row2 {
@@ -111,7 +111,7 @@
 }
 
 .card-header {
-  border-bottom: 1px solid #e19e0c;
+  border-bottom: 1px solid #676258;
   padding-bottom: 20px;
 }
 
@@ -119,7 +119,7 @@
   width: 50%;
   margin-right: 20px;
   padding: 20px;
-  background-color: #dc9a0c;
+  background-color: #676258;
   /* border: 1px solid white; */
   border-radius: 15px;
 }
@@ -128,13 +128,13 @@
   width: 50%;
   /* margin-left: 10px; */
   padding: 20px;
-  background-color:  #dc9a0c ;
+  background-color:  #676258 ;
   /* border: 1px solid white; */
   border-radius: 15px;
 }
 
 .card-contents-item {
-  border-bottom: 1px solid #212121;
+  border-bottom: 1px solid #2f2e2e;
   height: 70px;
   display: flex;
   align-items: center;
@@ -160,13 +160,13 @@
 .card-contents-item-col1-left {
   padding: 15px;
   border-radius: 5px;
-  background-color: #1e1070;
+  background-color: #676258;
 }
 
 .card-contents-item-col1-right {
   padding: 15px;
   border-radius: 50px;
-  background-color: #1e1070;
+  background-color: #676258;
 }
 
 .card-contents-item-col2 {
@@ -229,17 +229,17 @@
   width: 100%;
   height: 50px;
   margin-top: 15px;
-  color: white;
-  background: linear-gradient(to bottom, #ce9914, #2d2a7d);
+  color: rgb(199, 219, 223);
+  background: linear-gradient(to bottom, #0d0d0c, #2d2a7d);
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .card-footer-btn:hover {
-  color: white;
+  color: rgb(147, 208, 243);
   border: 1px solid #5954f5;
-  background: #b6ae1c;
+  background: #252d32;
 }
 
 /* ==== */
@@ -407,6 +407,7 @@
   .card-contents-item-col2-sapcebetween div {
     width: 100%;
   }
+  
 
   .card-contents-item-col3-confirmation {
     display: none;

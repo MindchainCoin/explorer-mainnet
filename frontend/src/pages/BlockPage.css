@@ -8,7 +8,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
-  background-color: #e6a100;
+  background-color: #525151;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -44,7 +44,7 @@
 .blockDataInfo {
   margin: 0px 30px 0px 30px;
   border-radius: 15px;
-  background-color: #c6bc00;
+  background-color: #676258;
   padding: 10px 20px 10px 20px;
 }
 
@@ -52,14 +52,14 @@
   display: flex;
   align-items: center;
   height: 50px;
-  border-bottom: #c99b27 solid 1px;
+  border-bottom: #676258 solid 1px;
 }
 
 .blockData-row-input {
   display: flex;
   align-items: center;
   height: 200px;
-  border-bottom: #c79409 solid 1px;
+  border-bottom: #676258 solid 1px;
 }
 
 .blockData-row-last {
@@ -178,7 +178,7 @@
 
 .inputData-button:hover {
   color: black;
-  background-color: #7570fa;
+  background-color: #110bbd;
 }
 
 .inputData-table {
@@ -186,7 +186,7 @@
   flex-direction: column;
   /* width: 100%; */
   max-width: 900px;
-  background-color: #c68b0b;
+  background-color: #006aff;
   height: auto;
   text-align: left;
   border: 1px solid grey;

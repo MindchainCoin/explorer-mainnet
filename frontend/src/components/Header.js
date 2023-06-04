@@ -64,7 +64,7 @@ const Header = () => {
           <h2>|</h2>
         </li>
         <li>
-          <h3>Leo</h3>
+          <h3>MSC</h3>
         </li>
       </ul>
 

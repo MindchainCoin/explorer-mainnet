@@ -10,6 +10,7 @@ import { getTokenData } from "../redux/action/getTokenData";
 import { Chart } from "../components/_index";
 import { dbAddressArr } from "../redux/action/dbAddressArr";
 import { dbChartWeeklyTxsByDate } from "../redux/action/dbChartWeeklyByDate";
+import {mindCoinPrice} from "./price"
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -120,16 +121,23 @@ const Main = () => {
     getCardSectionFunc();
   }, []);
 
+
+
   return (
     <div className="mainPage">
       <div className="blockInfoContainer">
         <div className="blockInfoBox">
           <div className="blockInfoSection1">
             <div className="block-col1">
-              <div className="block-col1-row1">
-                <h1>MIND Price</h1>
-                {tokenData != null ? <h3>$ {tokenData.last}</h3> : null}
-              </div>
+            <div className="block-col1-row1">
+      <h1>MIND Price</h1>
+      {mindCoinPrice && (
+        <>
+          <p>{mindCoinPrice.slice(0, 6)} USD</p>
+          
+        </>
+      )}
+    </div>
               <div className="block-col1-row2">
                 <h1>All Address</h1>
                 {allAddressArr != null ? (
@@ -181,18 +189,29 @@ const Main = () => {
                 return (
                   <div className="card-contents" key={index}>
                     <div className="card-contents-item">
-                      <p className="card-contents-item-col1-left">Bk</p>
+                    <p className="card-contents-item-col1-left">
+  <img src="https://as2.ftcdn.net/v2/jpg/04/35/60/05/1000_F_435600570_4BT1D15nMrbHM4M12Qkzm6Sv6Q2PpOTk.jpg" alt="Bk" height="45" />
+</p>
+
+
+
+
                       <div className="card-contents-item-col2">
                         <div className="card-contents-item-col2-row1">
                           <span
                             onClick={(e) => goToBlock(datas.blocknumber, e)}
                           >
-                            {datas.blocknumber}
+                           ⛓️ {datas.blocknumber}
                           </span>
                         </div>
                         <div className="card-contents-item-col2-row2">
-                          {/* {(datas.time_stamp).substr(5,)} */}
-                          {latestBlocksTimeago[index]}
+                           {/*(datas.time_stamp).substr(5,)*/} 
+                          
+
+
+                          {/*/latestBlocksTimeago[index]*/}
+                          {/*(latestBlocksTimeago[index] - 6) * 3 - 3*/}
+
                         </div>
                       </div>
                       <div className="card-contents-item-col3">
@@ -237,7 +256,10 @@ const Main = () => {
                 return (
                   <div className="card-contents" key={index}>
                     <div className="card-contents-item">
-                      <p className="card-contents-item-col1-right">Tx</p>
+                    <p className="card-contents-item-col1-right">
+  <img src="https://i.postimg.cc/26D66W9g/Adobe-Express-20230604-1951380-1.png" alt="Tx" height="40" />
+</p>
+
                       <div className="card-contents-item-col2">
                         <div className="card-contents-item-col2-row1">
                           <span onClick={(e) => goToTxHash(datas.txHash, e)}>
@@ -246,7 +268,7 @@ const Main = () => {
                           ...
                         </div>
                         <div className="card-contents-item-col2-row2">
-                          {latestTxsTimeago[index]}
+                          {/*latestTxsTimeago[index]*/}
                         </div>
                       </div>
                       <div className="card-contents-item-col2-sapcebetween">
