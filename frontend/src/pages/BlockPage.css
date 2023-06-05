@@ -88,7 +88,7 @@
 }
 
 .blockData-col2 span {
-  color: #5954fa;
+  color: #a6f8f0;
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@
   margin-left: 15px;
   display: flex;
   align-items: center;
-  background-color: #1e1070;
+  background-color: #135173;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -130,7 +130,7 @@
 .blockData-col2 button {
   padding: 5px;
   border-radius: 5px;
-  background-color: #5954fa;
+  background-color: #166eb1;
   cursor: pointer;
   border: none;
   outline: none;
@@ -186,7 +186,7 @@
   flex-direction: column;
   /* width: 100%; */
   max-width: 900px;
-  background-color: #006aff;
+  background-color: #4a76b3;
   height: auto;
   text-align: left;
   border: 1px solid grey;

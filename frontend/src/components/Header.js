@@ -27,6 +27,62 @@ const Header = () => {
     //console.log(toggleOn)
   }, [params]);
 
+  const addMindSmartChain = async () => {
+    try {
+      // Define your custom network information
+      const network = {
+        chainId: "0x270C", // Chain ID of the network (9996 in decimal)
+        chainName: "Mind Smart Chain",
+        nativeCurrency: {
+          name: "MIND",
+          symbol: "MIND",
+          decimals: 18,
+        },
+        rpcUrls: ["https://rpc-msc.mindchain.info/"],
+        blockExplorerUrls: ["https://explorer.mindchain.info/"],
+      };
+  
+      // Check if the network is already added
+      const isNetworkAdded = await checkNetworkAdded(network.chainId);
+  
+      if (isNetworkAdded) {
+        console.log("Mind Smart Chain is already added to MetaMask");
+        return;
+      }
+  
+      // Add the network to MetaMask
+      const result = await window.ethereum.request({
+        method: "wallet_addEthereumChain",
+        params: [network],
+      });
+  
+      console.log("Mind Smart Chain added successfully!", result);
+    } catch (error) {
+      console.error("Failed to add Mind Smart Chain:", error);
+    }
+  };
+  
+  const buttonStyles = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '10px 20px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    backgroundColor: '#f7931a',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  };
+
+  const iconStyles = {
+    marginRight: '8px',
+    width: '20px',
+    height: '20px',
+  };
+  
+
   return (
     <header className="header">
       <div className="logo">
@@ -64,7 +120,14 @@ const Header = () => {
           <h2>|</h2>
         </li>
         <li>
-          <h3>MSC</h3>
+        <button style={buttonStyles} onClick={addMindSmartChain}>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
+        alt="MetaMask Icon"
+        style={iconStyles}
+      />
+      Add MSC to MetaMask
+    </button>
         </li>
       </ul>
 
