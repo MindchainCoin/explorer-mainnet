@@ -31,21 +31,21 @@ const Footer = () => {
             <h3>Community</h3>
             <div className="social-links">
               <a
-                href=""
+                href="https://twitter.com/MindChain1"
                 target="_blank"
                 aria-label="Telegram"
               >
                 <TbBrandTelegram size={20} />
               </a>
               <a
-                href=""
+                href="https://twitter.com/MindChain1"
                 target="_blank"
                 aria-label="Medium"
               >
                 <BsMedium size={20} />
               </a>
               <a
-                href=""
+                href="https://twitter.com/MindChain1"
                 target="_blank"
                 aria-label="Twitter"
               >
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="foo">
-        Copyright © 2023 - 2025. MIND.INC. All Rights Reserved.
+        Copyright © 2023 - 2025. Mindchain Ecosystem All Rights Reserved.
       </div>
     </footer>
   );
