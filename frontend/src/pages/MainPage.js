@@ -1,6 +1,6 @@
 /* eslint-disable */
 import "./MainPage.css";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect,useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { dbLatestBlocks } from "../redux/action/dbLatestBlocks";
@@ -121,7 +121,35 @@ const Main = () => {
     getCardSectionFunc();
   }, []);
 
+  //dummy price 
+  const [tokenPrice, setTokenPrice] = useState(() => {
+    const storedPrice = localStorage.getItem('tokenPrice');
+    return storedPrice !== null ? parseFloat(storedPrice) : 5.1;
+  });
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const pumpOrDump = Math.random();
+
+      if (pumpOrDump < 0.5) {
+        const pumpFactor = 1 + Math.random() * 0.1;
+        setTokenPrice(prevPrice => {
+          const newPrice = prevPrice * pumpFactor;
+          localStorage.setItem('tokenPrice', newPrice.toFixed(2));
+          return newPrice;
+        });
+      } else {
+        const dumpFactor = 1 - Math.random() * 0.1;
+        setTokenPrice(prevPrice => {
+          const newPrice = prevPrice * dumpFactor;
+          localStorage.setItem('tokenPrice', newPrice.toFixed(2));
+          return newPrice;
+        });
+      }
+    }, 50000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="mainPage">
@@ -133,7 +161,11 @@ const Main = () => {
       <h1>MIND Price</h1>
       {mindCoinPrice && (
         <>
-          <p>{mindCoinPrice.slice(0, 6)} USD</p>
+          <p> {tokenPrice !== null ? (
+        <h1> ${tokenPrice.toFixed(2)}</h1>
+        ) : (
+      <h1>Loading... USD </h1> 
+      )} </p>
           
         </>
       )}
