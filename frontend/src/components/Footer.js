@@ -21,7 +21,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/nnlgsakib" target="_blank">
+                <a href="https://github.com/MindchainCoin" target="_blank">
                   Github
                 </a>
               </li>
