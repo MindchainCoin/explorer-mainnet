@@ -124,7 +124,7 @@ const Main = () => {
   //dummy price 
   const [tokenPrice, setTokenPrice] = useState(() => {
     const storedPrice = localStorage.getItem('tokenPrice');
-    return storedPrice !== null ? parseFloat(storedPrice) : 5.1;
+    return storedPrice !== null ? parseFloat(storedPrice) : 0.25;
   });
 
   useEffect(() => {
