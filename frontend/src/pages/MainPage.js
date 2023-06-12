@@ -162,7 +162,7 @@ const Main = () => {
       {mindCoinPrice && (
         <>
           <p> {tokenPrice !== null ? (
-        <h1> ${tokenPrice.toFixed(2)}</h1>
+        <h1> {mindCoinPrice && mindCoinPrice.slice(0, 6)}</h1>
         ) : (
       <h1>Loading... USD </h1> 
       )} </p>
