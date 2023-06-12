@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = 'coinrankingd047dc230e2b59332b8cc15e37bb477497cc41230fb7cd5c';
-const API_URL = 'https://api.coinranking.com/v2/coin/htA2C2yTr/price';
+const API_URL = 'https://api.coinranking.com/v2/coin/M9bj_WrX/price';
 
 let mindCoinPrice = localStorage.getItem('mindCoinPrice') || null;
 
